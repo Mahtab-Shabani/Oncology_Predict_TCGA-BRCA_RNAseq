@@ -118,4 +118,6 @@ In this project:
 ✔️ Built and compared three ML models
 
 ✔️ Achieved a high classification performance, with Random Forest reaching 98.35% accuracy
+
+
 These results demonstrate that gene-expression–based classification of Tumor vs Normal samples can be highly accurate with appropriate preprocessing and model selection.
