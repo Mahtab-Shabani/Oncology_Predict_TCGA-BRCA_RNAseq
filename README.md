@@ -87,11 +87,14 @@ We built three separate models to compare performance:
 •	Precision: 1.000
 •	Recall: 0.973
 •	F1-score: 0.986
+<img width="500" alt="TCGA_compare_SVM_counts" src="https://github.com/user-attachments/assets/b75210a8-d051-4d84-9c1b-0ae108822acb" /><img width="500" alt="TCGA_compare_SVM_norm" src="https://github.com/user-attachments/assets/9f6cf8b2-08a6-4059-9498-5d9e7724b704" />
+
 
 **Model B — PCA (50 components) + SVM**
 Performance was essentially identical to Model A:
 •	Accuracy: 97.52%
 •	F1-score: 0.986
+<img width="500" alt="TCGA_compare_PCA_SVM_counts" src="https://github.com/user-attachments/assets/200ab70c-8db7-47d6-923a-b5ffcf4252b1" /><img width="500" alt="TCGA_compare_PCA_SVM_norm" src="https://github.com/user-attachments/assets/83d7feb5-da98-4247-bebf-9f67980d2733" />
 
 
 **Model C — Random Forest (TreeBagger)**
@@ -99,25 +102,19 @@ Best performing model in the project
 •	Accuracy: 98.35%
 •	Precision: 1.000
 •	Recall: 0.982
-•	F1-score: 0.991
+•	F1-score: 0.991  <br />
 This model misclassified only a few tumor samples and never predicted Normal incorrectly, making it the strongest model.
+<img width="500" alt="TCGA_compare_RF_counts" src="https://github.com/user-attachments/assets/9d45a2cc-19fe-41c4-8cd1-8cc750b161f8" /><img width="500" alt="TCGA_compare_RF_norm" src="https://github.com/user-attachments/assets/88200f8a-e201-432a-a713-d50ee0c9493c" />
+
 
 
 ## 5. Summary
 
-In this project:
-
-✔️ We processed and analyzed the TCGA-BRCA gene expression dataset
-
-✔️ Addressed challenges of high dimensionality and extreme class imbalance
-
-✔️ Performed feature selection (top 300 variable genes)
-
-✔️ Balanced the training set using undersampling
-
-✔️ Built and compared three ML models
-
-✔️ Achieved a high classification performance, with Random Forest reaching 98.35% accuracy
-
-
+In this project: <br />
+✔️ We processed and analyzed the TCGA-BRCA gene expression dataset <br />
+✔️ Addressed challenges of high dimensionality and extreme class imbalance <br />
+✔️ Performed feature selection (top 300 variable genes) <br />
+✔️ Balanced the training set using undersampling <br />
+✔️ Built and compared three ML models  <br />
+✔️ Achieved a high classification performance, with Random Forest reaching 98.35% accuracy <br />
 These results demonstrate that gene-expression–based classification of Tumor vs Normal samples can be highly accurate with appropriate preprocessing and model selection.
