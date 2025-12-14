@@ -32,8 +32,8 @@ We mainly used this file to match sample identifiers and filter valid cases.
 ## 2. Initial Challenges
 ### Challenge 1 — Strong Class Imbalance <br />
 Among 1,211 usable samples: <br />
-* `1,097 Tumor` <br />
-* `114 Normal` <br />
+•	`1,097 Tumor` <br />
+•	`114 Normal` <br />
 
 This ~1:10 imbalance causes typical ML models to: <br />
 * Predict "Tumor" for nearly everything <br />
@@ -62,7 +62,7 @@ These were removed. <br />
 ## 3. Preprocessing and Solutions
 ### Solution 1 — Feature Selection <br />
 We computed the variance of each gene and selected the top 300 most variable genes. <br />
-20,530 genes → 300 features <br />
+`20,530 genes → 300 features` <br />
 This: <br />
 *	Reduced noise <br />
 *	Improved training speed <br />
@@ -71,15 +71,15 @@ This: <br />
 
 ### Solution 2 — Class Balancing (Undersampling) <br />
 Training set before balancing: <br />
-* Tumor = 878 <br />
-*	Normal = 91 <br />
+•	`Tumor = 878` <br />
+•	`Normal = 91` <br />
 
 To balance: <br />
 *	Randomly undersampled 91 Tumor samples <br />
 *	Paired with 91 Normal samples <br />
 
 Train set after balancing: <br />
-*	182 samples (91 Tumor, 91 Normal) <br />
+•	`182 samples (91 Tumor, 91 Normal)` <br />
 
 This significantly improved the classifier’s ability to detect both classes. <br />
 
