@@ -129,3 +129,12 @@ In this project: <br />
 ✔️ Built and compared three ML models  <br />
 ✔️ Achieved a high classification performance, with Random Forest reaching `98.35% accuracy` <br />
 These results demonstrate that gene-expression–based classification of `Tumor vs Normal` samples can be highly accurate with appropriate preprocessing and model selection.
+
+
+## 6. How to Run the Code
+
+* Run the `demo_TCGA_BRCA_compare_models.m` script (Results and figures will be generated automatically).
+
+Dependency
+------------
+This code is implemented in MATLAB 2014a and doesn't depend on any other toolbox.
